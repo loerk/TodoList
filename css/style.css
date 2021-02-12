@@ -1,0 +1,59 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+.todo_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height:100vh;
+  text-align: center;
+  padding: 100px;
+  margin:100px;
+  background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  box-shadow: 0px 4px 29px 0px rgba(77,68,68,0.93);
+-webkit-box-shadow: 0px 4px 29px 0px rgba(77,68,68,0.93);
+-moz-box-shadow: 0px 4px 29px 0px rgba(77,68,68,0.93);
+}
+.title_header {
+  padding: 30px;
+  text-transform: uppercase;
+  
+}
+.todo_form {
+  min-width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.todo_form > input[type="text"],
+.todo_form > button {
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  outline: none;
+}
+
+.todo_form > input[type="text"] {
+  border-bottom: 3px solid #4ecdc4;
+  opacity: 0.5;
+  width: 60%;
+}
+
+.todo_form > input[type="text"]:hover,
+.todo_form > input[type="text"]:focus {
+  opacity: 1;
+}
+
+.todo_form > button {
+  background-color: #4ecdc4;
+  color: #ffffff;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.todo_form > button:hover {
+  border: 1px solid #4ecdc4;
+  background-color: #ffffff;
+  box-shadow: 0 5px 6px 0 #999;
+  color: #4ecdc4;
+}
